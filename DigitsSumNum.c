@@ -13,18 +13,18 @@ int num,sumOdd=0,tens,sumEven;
        num/=10;
        if(tens%2==0)
        {
-           sumOdd+=tens;
+           sumEven+=tens;
 
        }
        else
        {
-           sumEven+=tens;
+           sumOdd+=tens;
        }
 
    }
-   printf("SumOdd=%d\n",sumOdd);
+   
    printf("SumEven=%d",sumEven);
-
+   printf("SumOdd=%d\n",sumOdd);
 
     return 0;
 }
