@@ -14,7 +14,7 @@ int main() {
 
    for(i = 0; i< 8;++i)
    {
-     //for numebr = 5 => 5-5 count of 5 will be print in index 0 ..
+     //for numebr = 5 => 0-5 count of 5 will be print in index 0 ..
        count[arr[i]-5]++;
 
    }
