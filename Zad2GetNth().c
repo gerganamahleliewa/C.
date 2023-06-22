@@ -65,7 +65,7 @@ int GetNth(Node *head,int index)
     assert(index > 1);
     assert(index < 3);
 
-    return countIndex;
+   
 
 }
 
