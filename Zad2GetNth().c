@@ -55,10 +55,13 @@ int GetNth(Node *head,int index)
 
     while(current != NULL)
     {
-        countIndex[current->data]++;
+        if(countIndex == index)
+            return (current->data);
+        countIndex++;
         current = current->next;
     }
-  //Assertion faild if indec is bigger than 3 or smaller than 1
+    
+  //Assertion failed if index is bigger than 3 or smaller than 1
     assert(index > 1);
     assert(index < 3);
 
