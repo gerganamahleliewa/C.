@@ -50,7 +50,7 @@ Node *createLinkedList()
 int GetNth(Node *head,int index)
 {
   
-    int countIndex[3] = {0};
+    int countIndex = 0;
     Node *current = head;
 
     while(current != NULL)
@@ -65,7 +65,7 @@ int GetNth(Node *head,int index)
     assert(index > 1);
     assert(index < 3);
 
-    return countIndex[index];
+    return countIndex;
 
 }
 
