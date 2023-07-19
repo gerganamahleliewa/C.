@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main() {
+
+        int x,rem;
+        printf("Enter X:");
+        scanf("%d",&x);
+
+
+        while(x!=0)
+        {
+            rem=x%10;
+            x/=10;
+            
+ //check if any bit in x is 1
+          if(x!=0)
+          {
+              return 1;
+          }else {
+              return 0;
+          }
+        }
+
+    return 0;
+}
