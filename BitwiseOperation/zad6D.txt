@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+
+
+    int x=0x13C452;
+    int n=sizeof(x);
+    //search size of bits
+    int mask = x>>((n-1)*8);
+
+//and(&) shift and 111111111 , so if result is different from 1111111 it is true
+    if( (mask & 0xFF) != 0xFF)
+    {
+        return 1;
+    }
+    else{
+        return 0;
+    }
+
+    return 0;
+}
