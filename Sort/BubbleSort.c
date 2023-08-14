@@ -9,7 +9,7 @@
 void BubbleSort(int *arr,int size)
 {
     int temp,i,j;
-
+//one loop for passes
     for(i = 0;i < size-1;++i)
     {
 
