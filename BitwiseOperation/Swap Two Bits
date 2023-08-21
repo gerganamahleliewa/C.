@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+#include <ctype.h>
+
+
+int main() {
+
+
+    int number,position1,position2;
+    printf("Enter number:");
+    scanf("%d",&number);
+
+    printf("Enter first position:");
+    scanf("%d",&position1);
+
+    printf("Enter second position:");
+    scanf("%d",&position2);
+
+        number^= (1 << position1);
+        number^= (1 << position2);
+
+        printf("Result = %d",number);
+
+
+    return 0;
+}
